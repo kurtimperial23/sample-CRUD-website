@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Database</title>
+    <style>
+        table {
+            margin: 0 auto;
+            text-align: center
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+                <a href="/usingmydbimperial"> <==Back to homepage</a> 
+                <h1>Add a Record</h1>
+
+        <form method="post" action="add_process.php">
+            <table  >
+                <tr>
+                    <td><label for="txtname">Enter Name:</label></td>
+                    <td><input type="text" id="name" name="txtname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="txtnumber">Enter Phone Number:</label></td>
+                    <td><input type="number" id="pnumber" name="txtnumber" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="SAVE" name="submit"> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="CLEAR" name="reset">
+                    </td>
+                </tr>
+            </table>
+        </center>
+        
+        </form>
+    </div>
+</body>
+</html>
